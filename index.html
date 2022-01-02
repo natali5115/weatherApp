@@ -11,41 +11,38 @@
 
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
-
 </head>
 
 <body>
     <div class="container">
         <div class="weather-app-wrapper">
-        <div class="weather-app">
-            <form id="search-form" class="mb-3">
-                <div class="row">
-                    <div class="col-9">
-                    <input type="search" placeholder="Type a city.." class="form-control" id="city-input" autocomplete="off" />
-                    </div>
-                    <div class="col-3">
-                        <input type="submit" value="Search" class="btn btn-primary w-100" />
-                    </div>
-                    </div>
-                    </form>
-                    <div class="overview"> 
-            <h1 id="city"></h1>
-            <ul>
-                <li>Last updated: <span id="date"></span></li>
-                <li id="description"></li>
-            </ul>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="clearfix weather-temperature">
-                        <div class="float-left">
-                            <img src="images/sunny.png" alt="sunny icon" class="weather-icon float-left" width="50" />
+            <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                                autocomplete="off" />
                         </div>
-                    <img src="" alt="Clear" id="icon" class="float-left" />
-                    <div class="float-left">
-                        <strong id="temperature"></strong><span class="units"> °C</span>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-primary w-100" />
+                        </div>
                     </div>
-                    </div>
+                </form>
+                <div class="overview">
+                    <h1 id="city"></h1>
+                    <ul>
+                        <li>Last updated: <span id="date"></span></li>
+                        <li id="description"></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="clearfix weather-temperature">
+                            <img src="" alt="Clear" id="icon" class="float-left" />
+                            <div class="float-left">
+                                <strong id="temperature"></strong><span class="units"> °C</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-6">
                         <ul>
@@ -53,70 +50,9 @@
                             <li>Wind: <span id="wind"></span> m/h</li>
                         </ul>
                     </div>
-                    </div>
-                    <div class="weather-forecast" id="forecast"></div>
-                    </div>
-                <div class="card-group">
-                    <div class="row">
-                        <div class="card w-5 mr-5" style="width: 7rem;">
-                            <img src="images/sunny.png" class="card-img-top" alt="Sunny">
-                            <div class="card-body">
-                                <h5 class="card-title">Sun</h5>
-                                <p class="card-text"> 8°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/partly-cloudy.png" class="card-img-top" alt="partly-cloudy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Mon</h5>
-                                <p class="card-text">9°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/cloudy.png" class="card-img-top" alt="cloudy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Tue</h5>
-                                <p class="card-text">7°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/windy.png" class="card-img-top" alt="windy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Wed</h5>
-                                <p class="card-text">7°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/windy.png" class="card-img-top" alt="windy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Thu</h5>
-                                <p class="card-text">5°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/partly-cloudy.png" class="card-img-top" alt="partly-cloudy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Fri</h5>
-                                <p class="card-text">6°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/rainy.png" class="card-img-top" alt="rainy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Sat</h5>
-                                <p class="card-text">7°C |°F</p>
-                            </div>
-                        </div>
-                        <div class="card w-5" style="width: 7rem;">
-                            <img src="images/cloudy.png" class="card-img-top" alt="cloudy" width="20">
-                            <div class="card-body">
-                                <h5 class="card-title">Sun</h5>
-                                <p class="card-text">6°C |°F</p>
-                            </div>
-                        </div>
-
-                        
-                        
+                </div>
+                <div class="weather-forecast" id="forecast"></div>
+            </div>           
                        <p>
                        <a href="https://pensive-pike-988bda.netlify.app" target="_blank"
                        >Open-Source code</a>
